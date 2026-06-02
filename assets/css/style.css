@@ -241,3 +241,81 @@ header nav a {
     .conhecimentos-list > li > img {
         width: 72px;
     }
+
+
+    #contato{
+    gap: 2rem;
+
+    padding-block: 4rem;
+}
+
+#conato > h2{
+    margin: 0;
+}
+
+#contato > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+#contato > ul > li {
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.icon-wrapper{
+    display: flex;
+    justify-content: center;
+
+    width: 2rem;
+
+}
+
+#contato a {
+    color: var(--clr-black);
+    text-decoration: none;
+}
+
+#contato > cite{
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+
+    text-transform: uppercase;
+}
+
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--clr-blue);
+
+    padding-block: 1.5rem;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    color: var(--clr-white);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+footer img{
+    height: 24px;
+}
