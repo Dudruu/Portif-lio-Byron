@@ -1,22 +1,49 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+
+
+setup
+*/
+
+.btn {
+    
+    background-color: var(--clr-primary);
+    width: fit-content;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+
+    font-size: 14px;
+    color: var(--clr-white);
+    text-decoration: none;
+
+}
+
+.btn:hover {
+    transform: scale(1.01);
+}
+
+
+
+.w-100{
+    width: 100%;
+}
 
 :root {
     --clr-primary: #D20A2E;
     --clr-black: #191919;
-    --clr-white:#FAFAFF;
-    --clr-blue:#070738;
+    --clr-white: #FAFAFF;
+    --clr-blue: #070738;
 
     font-family: "Roboto", Helvetica, sans-serif;
     font-size: 14px;
     line-height: 18px;
-    color:var(--clr-black);
+    color: var(--clr-black);
 }
 
 header {
     display: flex;
     align-items: center;
-    justify-content:space-between ;
+    justify-content: space-between;
     
     padding: 1rem 1.5rem;
     max-width: 100%;
@@ -28,18 +55,18 @@ header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-header h1{
+header h1 {
     font-size: 22px;
-    font-weight:500;
+    font-weight: 500;
 }
 
 header nav {
-    display:none;
+    display: none;
     align-items: center;
     gap: 1.5rem;
 }
 
-header nav a{
+header nav a {
     color: var(--clr-white);
     font-size: 16px;
     font-weight: 500;
@@ -52,60 +79,75 @@ header nav a{
     }
 }
 
-
-#home{
+#home {
     display: flex;
     align-items: center;
     justify-content: start;
     height: 700px;
-    
 }
 
-.home-cta{
+.home-cta {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2.5rem;
-    background-image:url(../img/Design\ sem\ nome\(5\).png) ;
+    background-image: url(../img/fundoRR.png);
     background-repeat: no-repeat;
     background-position: -1rem;
-    background-size:400px ;
+    background-size: 400px;
     height: 400px;
-    padding-inline: 1.5rem ;
+    padding-inline: 1.5rem;
 }
 
-
-.home-heading{
+.home-heading {
     display: flex;
     flex-direction: column;
-    gap:unset 0;
+    gap: 0;
 }
 
-.home-heading>h1{
+.home-heading > h1 {
     font-size: 24px;
     line-height: 36px;
     font-weight: 500;
     margin: 0;
 }
 
-.home-heading>p{
+.home-heading > p {
     line-height: 24px;
     margin: 0;
 }
 
-.home-cta>a{
 
-    background-color: var(--clr-primary);
-    width: fit-content;
-    padding: 1rem 1.2rem;
-    border-radius:6px ;
 
-    font-size: 14px;
+#sobre {
+    gap: 1rem;
+    background-color: var(--clr-black);
     color: var(--clr-white);
-    text-decoration: none;
+    padding: 2rem 1.5rem;
+}
+
+
+#sobre > h2{
+    font-size:24px ;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
 
 }
 
-.home-cta>a:hover{
-    transform: scale(1.01);
+
+.sobre-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    width: 100%;
 }
+
+#sobre img{
+    border-radius: 12px;
+    width: 100%;
+    height: 300px;
+}
+
+
+
